@@ -2,10 +2,42 @@
 <html>
 <head>
 	<title>Scrollytelling - Complex</title>
+
 	<script src="https://unpkg.com/intersection-observer"></script>
 	<script src="https://unpkg.com/scrollama"></script>
-	<link href="styles.css"> </link>
-	
+
+	<style type="text/css">
+		html,body{
+			width: 100%;
+			height: 100%;
+			font-family: sans-serif;
+			color: #555;
+			background-color: #fff;
+			font-size: 1.4em;
+		}
+		section{
+			max-width: 1000px;
+			margin: 20% auto;
+		}
+		section:not(:first-of-type){
+			max-width: 1000px;
+			margin: 50% auto;
+		}
+		section div{
+			display: inline-block;
+			padding: 50px;
+			margin-bottom: 100%;
+		}
+		section div.steps{
+			max-width: 500px;
+		}
+		section div.visual{
+			float: right;
+			position: -webkit-sticky;
+			position: sticky;
+			top: 0;
+		}
+	</style>
 </head>
 <body>
 	<section><h2>A More Complex Scrollytelling Experience</h2></section>
@@ -40,7 +72,8 @@
 			<div>The End.</div>
 		</div>
 	</section>
-	<script>
+
+	<script type="text/javascript">
 		const scroller = scrollama();
 
 		scroller
@@ -76,6 +109,6 @@
 				document.getElementById('circObj').setAttribute('opacity', 1);
 			}
 		}
-		</script>
+	</script>
 </body>
 </html>
