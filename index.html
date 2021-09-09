@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scrollytelling - Complex</title>
+
+	<script src="https://unpkg.com/intersection-observer"></script>
+	<script src="https://unpkg.com/scrollama"></script>
+	<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+	<section><h2>A More Complex Scrollytelling Experience</h2></section>
+	<section>
+		<div class="visual">
+			<svg width=200 height=200>
+				<rect id="rectObj" width=200 height=200 x=0 y=0 fill="#ddd">
+			</svg>
+		</div>
+		<div class="steps">
+			<div class="step" data-value="#ddd" data-attribute="fill" data-target="rectObj">My favorite color is gray.</div>
+			<div class="step" data-value="blue" data-attribute="fill" data-target="rectObj">But blue is kinda nice.</div>
+			<div class="step" data-value="#FF9900" data-attribute="fill" data-target="rectObj">And who can argue with a nice shade of orange?</div>
+		</div>
+	</section>
+	<section>
+		<div class="visual">
+			<svg width=200 height=200>
+				<circle id="circObj" r=100 cx=100 cy=100 fill="#ff9900">
+			</svg>
+		</div>
+		<div class="steps">
+			<div>But it's not just about color, shape also matters!</div>
+			<div class="step" data-value=50 data-attribute="r" data-target="circObj">And size!</div>
+			<div class="step" data-value=0.5 data-attribute="opacity" data-target="circObj">And opacity...</div>
+			<div class="step" data-type="progressive" data-attribute="r" data-target="circObj">But wait, there's more...<br />
+			Wouldn't it be REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br />REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> REALLY<br /> nice if, as you scrolled, attributes could change dynamically?</div>
+		</div>
+	</section>
+	<section>
+		<div class="steps">
+			<div>The End.</div>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="index.js">
+
+	</script>
+</body>
+</html>
