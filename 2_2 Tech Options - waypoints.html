@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Waypoints</title>
+</head>
+<body>
+
+	<div id="thisDiv"></div>
+
+	<script type="text/javascript">
+		var waypoint = new Waypoint({
+			element: document.getElementById('thisDiv'),
+			handler: function(direction) {
+				console.log('thisDiv is here...and it is moving ' + direction);
+			}
+		})
+
+	</script>
+
+</body>
+</html>
